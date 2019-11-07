@@ -165,7 +165,6 @@ header nav a {
   background: lightgray;
 }
 #wrapper #content-block-a #content-container-a {
-  background: blue;
   width: 100%;
   display: flex;
   justify-content: space-between;
