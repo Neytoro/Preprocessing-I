@@ -57,3 +57,207 @@ html, body {
     height: 100%;
 }
 
+/* VARIABLES & MIXINS */
+
+.center() {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.around() {
+
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.between() {
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.column() {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.center-column () {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+/* NAV STYLING */
+
+header {
+
+	display: flex; 
+	justify-content: flex-end;
+
+	nav {
+
+		width: 50%;
+		display: flex;
+		justify-content: space-around;
+
+		a {
+
+			padding: 20px;
+			color: black;
+			text-decoration: none;
+
+		}
+
+	}
+
+}
+
+/* CONTENT STYLING */
+
+#wrapper {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	#content-block-a {
+
+		width: 80%;
+		.center-column();
+		padding: 20px;
+		background: lightgray;
+
+		#content-container-a {
+			
+			background: blue;
+			width: 100%;
+			.between();
+
+			div {
+	
+				width: 70%;
+				.center-column();
+				align-items: center;
+	
+			}
+
+		}
+
+		#content-container-b {
+
+			.column();
+
+			p { font-size: 20px; }
+
+			a {
+
+				width: 10%;
+				padding: 10px;
+				color: white;
+				cursor: pointer;
+				border-radius: 5px;
+				background: gray;
+				margin: 20px 0px 20px 0px;
+
+			}
+
+		}
+	
+		img { width: 30%; }
+
+		h1 { font-size: 50px; }
+
+		h2 { font-size: 25px; }
+	
+	}
+
+	#content-block-b {
+
+		width: 80%;
+		padding: 20px;
+		.between();
+
+		#content-container-c {
+
+			width: 45%;
+
+			h1 { font-size: 30px; font-weight: bold; }
+
+			p { font-size: 20px; margin-top: 20px; }
+
+		}
+
+		#content-container-d {
+
+			width: 45%;
+
+			h1 { font-size: 30px; font-weight: bold; }
+
+			ul { 
+
+				.column();
+				margin-top: 20px;
+				justify-content: center;
+				border: 1px solid lightgray;
+
+			}
+
+			li {
+
+				height: 40px;
+				padding: 12px 0px 0px 12px;
+				border-top: 1px solid lightgray;
+
+			}
+
+		}
+
+	}
+
+	#content-block-c {
+
+		width: 80%;
+		padding: 20px;
+
+		h1 { font-size: 30px; font-weight: bold; }
+
+		h2 { width: 25%; }
+
+		p { width: 25%; }
+
+		div {
+
+			.between();
+			padding: 10px 10px 10px 10px;
+
+		}
+
+		.years { font-weight: bold; }
+
+		.odd { background: lightgray; }
+
+	}
+
+	footer {
+
+		.center();
+		width: 80%;
+		height: 80px;
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		align-items: center;
+		margin: 20px 0px 20px 0px;
+		background: darkslategray;
+
+	}
+
+}

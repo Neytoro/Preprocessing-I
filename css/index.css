@@ -1,1 +1,277 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* VARIABLES & MIXINS */
+/* NAV STYLING */
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+/* CONTENT STYLING */
+#wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#wrapper #content-block-a {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: lightgray;
+}
+#wrapper #content-block-a #content-container-a {
+  background: blue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper #content-block-a #content-container-a div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper #content-block-a #content-container-b {
+  display: flex;
+  flex-direction: column;
+}
+#wrapper #content-block-a #content-container-b p {
+  font-size: 20px;
+}
+#wrapper #content-block-a #content-container-b a {
+  width: 10%;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  background: gray;
+  margin: 20px 0px 20px 0px;
+}
+#wrapper #content-block-a img {
+  width: 30%;
+}
+#wrapper #content-block-a h1 {
+  font-size: 50px;
+}
+#wrapper #content-block-a h2 {
+  font-size: 25px;
+}
+#wrapper #content-block-b {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper #content-block-b #content-container-c {
+  width: 45%;
+}
+#wrapper #content-block-b #content-container-c h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#wrapper #content-block-b #content-container-c p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+#wrapper #content-block-b #content-container-d {
+  width: 45%;
+}
+#wrapper #content-block-b #content-container-d h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#wrapper #content-block-b #content-container-d ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+#wrapper #content-block-b #content-container-d li {
+  height: 40px;
+  padding: 12px 0px 0px 12px;
+  border-top: 1px solid lightgray;
+}
+#wrapper #content-block-c {
+  width: 80%;
+  padding: 20px;
+}
+#wrapper #content-block-c h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#wrapper #content-block-c h2 {
+  width: 25%;
+}
+#wrapper #content-block-c p {
+  width: 25%;
+}
+#wrapper #content-block-c div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+#wrapper #content-block-c .years {
+  font-weight: bold;
+}
+#wrapper #content-block-c .odd {
+  background: lightgray;
+}
+#wrapper footer {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 80px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+  background: darkslategray;
+}
